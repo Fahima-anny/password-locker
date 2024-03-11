@@ -18,9 +18,9 @@
             </div>
             <div class="col-md-6">
                 <div class="input-section half-width">
-                    <input id="applyPin" class="form-control" type="text">
+                    <input id="typeNumberField" class="form-control" type="text">
                     <div class="numbers">
-                        <div class="calc-body">
+                        <div id="calculator" class="calc-body">
                             <div class="calc-button-row">
                               <div class="button" id="btn7">7</div>
                               <div class="button" id="btn8">8</div>
@@ -43,15 +43,15 @@
                             </div>
                             <div>
                                 <button type="submit" class="submit-btn" id="submitBtn">Submit</button>
-                                <p class="action-left">3 try left</p>
+                                <p id="retryTxt" class="action-left"><span id="retryNumber">3</span> try left</p>
                             </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="notify-section">
-            <p id="pinUnmatched" class="notify d-none">❌ Pin Didn't Match, Please try again</p>
-            <p id="pinMatched" class="notify d-none">✅ Pin Matched... Secret door is opening for you</p>
+            <p id="pinUnmatched" class="notify">❌ Pin Didn't Match, Please try again</p>
+            <p id="pinMatched" class="notify">✅ Pin Matched... Secret door is opening for you</p>
         </div>
     </div>
 
